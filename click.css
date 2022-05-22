@@ -1,0 +1,17 @@
+.cell {
+    height: 70px;
+    position: relative;
+}
+
+.cell span[role=title] {
+    font-size: large;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.cell span[role=qty] {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
