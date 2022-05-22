@@ -8,15 +8,59 @@
     <title>Click</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Dungeon</h2>
-      <hr>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="rounded border cell">
-            <span role="title">title</span>
-            <span role="qty">123</span>
+    <ul class="nav nav-tabs" role="tablist" id="dungeon-nav">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dungeon-tab-pane" type="button" role="tab">
+          Dungeon
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#science-tab-pane" type="button" role="tab">
+          Science
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#military-tab-pane" type="button" role="tab">
+          Military
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#setting-tab-pane" type="button" role="tab">
+          Setting
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="dungeon-tab-pane" role="tabpanel" tabindex="0">
+        <div class="container">
+          <h2>Dungeon</h2>
+          <hr>
+          <div class="row" id="dungeon-row">
+            <div class="col-12 col-md-6" example>
+              <div class="rounded border cell">
+                <span role="title">title</span>
+                <span role="qty">123</span>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="science-tab-pane" role="tabpanel"  tabindex="0">
+        <div class="container">
+          <h2>Science</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="military-tab-pane" role="tabpanel"  tabindex="0">
+        <div class="container">
+          <h2>Military </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="setting-tab-pane" role="tabpanel" tabindex="0">
+        <div class="container">
+          <h2>Setting</h2>
+          <hr>
         </div>
       </div>
     </div>

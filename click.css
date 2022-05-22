@@ -1,6 +1,11 @@
+#dungeon-nav {
+    margin-bottom: 10px;
+}
+
 .cell {
     height: 70px;
     position: relative;
+    user-select: none;
 }
 
 .cell span[role=title] {
@@ -14,4 +19,9 @@
     position: absolute;
     right: 10px;
     top: 5px;
+}
+
+.cell:hover {
+    cursor:pointer;
+    filter: brightness(80%);
 }
