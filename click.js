@@ -1,5 +1,7 @@
+import lang from './lang.js'
+
 const data = {
-    consume = {
+    consume: {
         a: 3,
         b: 1,
         c: 1,
@@ -16,36 +18,40 @@ const data = {
             }
         }
     },
-
-    lang_cn = {
-        0: ["魔力", "魔力炉"],
-        1: ["史莱姆", "史莱姆池"],
-        2: ["哥布林", "哥布林洞穴"],
-        3: ["地精", "地精地洞"],
-        4: ["蜥蜴人", "蜥蜴人沼泽"],
-        5: ["僵尸", "僵尸坟场"],
-        6: ["骷髅", "埋骨之地"],
-        7: ["鬼魂", "通灵塔"],
-        8: ["木乃伊", "金字塔"],
-        9: ["吸血鬼", "旧城堡"],
-    },
     
-    init = function () {
+    init: function () {
         this.consume.init();
     }
 };
 
 const current = {
-    dungeon: {},
+    qty: {},
+    prod: {},
     science: {},
-}
-
-const setting = {
-    tick: 10
-}
-
-function layout () {
-    
 };
 
-data.init();
+const setting = {
+    tick: 10,
+    lang: {},
+
+    set_lang: function (lang_tag) {
+        if (lang[lang_tag]) {
+            this.lang = lang[lang_tag]
+        }
+    }
+};
+
+function layout () {
+    let dungeon = $("#dungeon-row");
+    let example = $("#dungeon-row [example]");
+    let node;
+    let i;
+    for (i=0; i<=30; i++) {
+        node = example.clone()
+    }
+};
+
+$(document).ready(function () {
+    data.init();
+    layout();    
+});
