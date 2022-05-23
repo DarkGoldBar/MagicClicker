@@ -6,6 +6,7 @@
     height: 70px;
     position: relative;
     user-select: none;
+    background: linear-gradient(45deg, #99cce6, transparent);
 }
 
 .cell span[role=title] {
@@ -17,8 +18,16 @@
 
 .cell span[role=qty] {
     position: absolute;
+    font-weight: bold;
+    font-size: large;
     right: 10px;
     top: 5px;
+}
+
+.cell span[role=prod] {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
 }
 
 .cell:hover {
